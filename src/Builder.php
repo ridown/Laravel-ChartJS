@@ -33,7 +33,7 @@ class Builder
         'element'   => null,
         'labels'    => [],
         'prefix'    => 'chartjs-',
-        'type'      => 'Line',
+        'type'      => 'line',
         'options'   => [
             'animation'       => true,
             'animationSteps'  => 100,
@@ -47,7 +47,7 @@ class Builder
     private $types = [
         'Bar'       => 'extended',
         'Doughnut'  => 'minimal',
-        'Line'      => 'extended',
+        'line'      => 'extended',
         'Pie'       => 'minimal',
         'PolarArea' => 'minimal',
         'Radar'     => 'extended',
