@@ -35,9 +35,12 @@ class Builder
         'prefix'    => 'chartjs-',
         'type'      => 'line',
         'options'   => [
-            'animation'       => true,
-            'animationSteps'  => 100,
-            'animationEasing' => 'easeOutBounce',
+            'animation' => [
+                'steps' => 50,
+                'easing' => "easeOutBounce",
+                'rotate' => true,
+                'scale' => false
+            ],
         ],
     ];
 
