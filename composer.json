@@ -1,5 +1,5 @@
 {
-    "name": "faustbrian/laravel-chartjs",
+    "name": "ridown/laravel-chartjs",
     "description": "ChartJS Integration with a Fluent Builder for Laravel 5",
     "keywords": ["laravel", "framework", "Laravel-ChartJS", "Laravel ChartJS", "Brian Faust", "faustbrian"],
     "license": "MIT",
