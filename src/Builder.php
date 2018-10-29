@@ -168,7 +168,7 @@ class Builder
     {
         $chart = $this->charts[$name];
 
-        return view('chartjs.canvas')
+        return view('laravel-chartjs::canvas')
                 ->with('dimension', $chart['dimension'])
                 ->with('element', $chart['element'])
                 ->with('prefix', $chart['prefix']);
@@ -200,7 +200,7 @@ class Builder
      */
     private function getView($name): string
     {
-        return 'chartjs.scripts.'.$this->types[$this->charts[$name]['type']];
+        return 'laravel-chartjs::scripts.'.$this->types[$this->charts[$name]['type']];
     }
 
     /**
