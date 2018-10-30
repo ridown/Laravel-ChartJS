@@ -15,7 +15,6 @@ namespace BrianFaust\ChartJS;
 
 use Illuminate\View\View;
 
-
 class Builder
 {
     /**
@@ -37,7 +36,7 @@ class Builder
         'options'   => [
             'animation' => [
                 'steps' => 50,
-                'easing' => "easeOutBounce",
+                'easing' => "easeOutQuad",
                 'rotate' => true,
                 'scale' => false
             ],
@@ -48,12 +47,14 @@ class Builder
      * @var array
      */
     private $types = [
-        'Bar'       => 'extended',
-        'Doughnut'  => 'minimal',
+        'bar'       => 'extended',
+        'doughnut'  => 'minimal',
         'line'      => 'extended',
-        'Pie'       => 'minimal',
-        'PolarArea' => 'minimal',
-        'Radar'     => 'extended',
+        'pie'       => 'minimal',
+        'polarArea' => 'minimal',
+        'radar'     => 'extended',
+        'bubble'    => 'extended',
+        'scatter'    => 'extended',
     ];
 
     /**
@@ -229,3 +230,5 @@ class Builder
         return $this;
     }
 }
+
+
