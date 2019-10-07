@@ -127,11 +127,11 @@ class Builder
      */
     public function type($type): self
     {
-        if (!array_key_exists($type, $this->types)) {
+        if (!array_key_exists(strtolower($type), $this->types)) {
             throw new \InvalidArgumentException('Invalid Chart type.');
         }
 
-        return $this->set('type', $type);
+        return $this->set('type', strtolower($type));
     }
 
     /**
